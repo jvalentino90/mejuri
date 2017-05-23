@@ -6,7 +6,7 @@ The actions are:
 - It's not possible to edit the items. 
 
 ### Notes
-The look and feel of the wallet is up to you, the image is only a guidance. 
+Please,The wallet look and feel should be based on cc_test.png. 
 This is an empty Rails 4.2.7 project. 
 
 ### Installation
