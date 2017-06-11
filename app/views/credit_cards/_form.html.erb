@@ -1,0 +1,8 @@
+<div id="new-credit-card">
+  <%= form_for @credit_card, remote: true do |f| %>
+    Number: <%= f.text_field :number %><br />
+    CVV: <%= f.text_field :cvv %><br />
+    Expiration Date : <%= f.text_field :expiration_date %><br />
+    <%= f.submit %>
+  <% end %>
+</div>

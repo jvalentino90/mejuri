@@ -1,0 +1,6 @@
+<div id="credit-card-<%=credit_card.id%>">
+  <%=credit_card.number%>
+  <%=credit_card.cvv%>
+  <%=credit_card.expiration_date%>
+  <%= link_to '<i class="material-icons">clear</i>'.html_safe, credit_card, method: :delete, remote:true %>
+</div>
