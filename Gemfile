@@ -34,6 +34,10 @@ gem 'pry-rescue'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'material_design_lite-rails', '~> 1.3'
+gem 'rspec-rails'
+gem 'factory_girl_rails'
+gem 'database_cleaner'
+gem 'faker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

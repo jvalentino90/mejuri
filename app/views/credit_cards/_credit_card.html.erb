@@ -1,6 +1,11 @@
 <div id="credit-card-<%=credit_card.id%>">
-  <%=credit_card.number%>
-  <%=credit_card.cvv%>
-  <%=credit_card.expiration_date%>
-  <%= link_to '<i class="material-icons">clear</i>'.html_safe, credit_card, method: :delete, remote:true %>
+
+<hr class="full-line">
+<span class="card-number">
+    <%=credit_card.getEncodedNumber%>
+  </span>
+  <span class="cvv">
+    <%=credit_card.expiration_date%>
+  </span>
+    <%= link_to '<i class="material-icons">clear</i>'.html_safe, credit_card, method: :delete, remote:true %>
 </div>

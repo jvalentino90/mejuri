@@ -1,8 +1,21 @@
 <div id="new-credit-card">
   <%= form_for @credit_card, remote: true do |f| %>
-    Number: <%= f.text_field :number %><br />
-    CVV: <%= f.text_field :cvv %><br />
-    Expiration Date : <%= f.text_field :expiration_date %><br />
-    <%= f.submit %>
+<!--     <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="sample1">
+      <label class="mdl-textfield__label" for="sample1">Text...</label>
+    </div> -->
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.email_field :number, class:'mdl-textfield__input', type:'text', id:'number' %>
+    <label class="mdl-textfield__label" for="number">Number</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.email_field :cvv, class:'mdl-textfield__input', type:'text', id:'cvv' %>
+    <label class="mdl-textfield__label" for="cvv">CVV</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <%= f.email_field :expiration_date, class:'mdl-textfield__input', type:'text', id:'expiration_date'%>
+    <label class="mdl-textfield__label" for="number">Expiration Date YY/MM</label>
+  </div>
+    <%= f.submit :class => "mdl-button mdl-js-button mdl-button--primary"%>
   <% end %>
 </div>

@@ -1,0 +1,38 @@
+.demo-card-square.mdl-card {
+  width: 320px;
+  min-height: 200px;
+  margin: auto;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: #00008B;
+}
+
+.card-number {
+  font-family: Roboto !important;
+  font-size: 12pt !important;
+  font-weight: 220 !important;
+  margin-right: 15px;
+}
+
+.cvv {
+  font-family: Roboto !important;
+  font-size: 10pt !important;
+  font-weight: 200 !important;
+  margin-right: 10px;
+}
+
+.full-line {
+  border-top: 1px solid #8c8b8b;
+  margin-bottom: 2px;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.credit-card-wrapper {
+  margin-bottom: 5px;
+}
+
+

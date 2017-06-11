@@ -1,9 +1,12 @@
-<div>
-  <h1>Your Wallet</h1>
-  <div id="credit-cards">
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">Your Wallet</h2>
+  </div>
+  <div id="credit-cards" class="credit-card-wrapper">
   <%= render partial: 'credit_card', collection: @credit_cards, as: :credit_card %>
   </div>
-  <%= link_to '<button class="mdl-button mdl-js-button mdl-button--primary">
-  Add Card </button>'.html_safe, new_credit_card_path, id: 'new-link', remote:true %>
-
+  <div class="button-wrapper">
+    <%= link_to '<button class="mdl-button mdl-js-button mdl-button--primary">
+    Add Card </button>'.html_safe, new_credit_card_path, id: 'new-link', remote:true %>
+  </div>
 </div>
